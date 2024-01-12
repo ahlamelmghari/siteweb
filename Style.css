@@ -1,0 +1,440 @@
+@font-face {
+    font-family:dancing script ;
+    src: url(fontText/DancingScript-Medium.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{  
+    position: sticky;
+    top: 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: white;
+    z-index: 9999;
+    
+}
+.logo img{
+    max-width: 250px;
+    height: auto;
+}
+.navmenu{
+    display: flex;
+}
+.navmenu a{
+    color: #2c2c2c;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 20px 20px;
+    font-weight: 500;
+    transition: all .42s ease;
+}
+.navmenu a:hover{
+    color: rgb(85 74 55);
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+}
+.nav-icon a {
+   flex: 1;
+}
+.nav-icon div{
+flex: 1;
+}
+.nav-icon i{
+    
+    color: #2c2c2c;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color:rgb(85 74 55);
+}
+#menu-icon{
+    font-size: 35px;
+    color: #2c2c2c;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+.main-home{
+    width:100%;
+    display: flex;
+    margin-bottom: 45px;
+    
+}
+.main-text {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.main-text div{
+    
+    background-color:none ;
+    padding: 25px;
+    border:none;
+    width: 800px;
+    border-radius: 6px;
+    background-color: rgb(30 78 41);
+    height: 600px;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow:5px 5px 10px black;
+    
+}
+.main-text h5{
+    color:#EE1C47;
+    font-size:16px;
+    text-transform: capitalize;
+    font-weight:500;
+}
+.main-text h1{
+    font-size: 80px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 500;
+    margin: 6px 0 20px;
+    color:rgb(255, 255, 255);
+    font-family: 'Jost', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.main-text p{
+    color:rgb(255, 255, 255);
+    font-family: 'Jost', sans-serif;
+    font-size:25px;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-family: dancing script;
+}
+.main-text p::selection{
+    background-color: white;
+    color: rgb(85 74 55);
+}
+.main-btn{
+    display: inline-block;
+    color:white;
+    font-size: 20px;
+
+    font-weight: bold;
+    text-transform: capitalize;
+    border: 2px solid #ffffff;
+    padding : 30px 80px;
+    transition :all .42s ease ;
+}
+.main-btn:hover{
+    background-color: #ffffff;
+    color: #000000;
+border-radius: 10PX;
+ }
+
+ .main-btn i {
+    vertical-align: middle;
+
+ }
+ .main-img {
+    width: 400px ;
+    object-fit: contain;
+    position: relative;
+    flex: 0.5;
+    
+    
+ }
+ /* trending-section-css */
+ .center-text h2{
+    color:  rgb(85 74 55);
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+
+ }
+ .products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(300px, auto));
+    gap :2rem;
+ }
+ .row{
+    position: relative;
+    transition :all .40s;
+ }
+ .row img {
+    width:100% ;
+    height: auto;
+    transition :all .40s;
+ }
+ .row img:hover{
+    transform: scale(0.9);
+ }
+ .heart-icon{
+    position:absolute;
+    right: 0;
+    font-size:25px;
+ }
+ .heart-icon:hover{
+    color: red;
+ }
+ .ratting i{
+    color: #ff8C00;
+    font-size: 18px;
+ }
+ .price p{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+ }
+ .price h4 {
+    color: #2c2c2c;
+    font-size: 20px;
+    font-weight: 600;
+ }
+.about{
+    margin-top: 150px;
+    display :flex;
+    width:100%;
+}
+.aboutus{    
+    background-color:none ;
+    
+    border:none;
+    flex: 1;
+    border-radius: 30px;
+    height: 600px;
+    display: flex;
+    flex-direction: column; 
+}
+.aboutus h1{
+    justify-self: start;
+    align-self: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    padding-bottom: 70px;
+}
+.aboutus p{
+    padding-left: 50px;
+    font-size: 24px;
+    text-align: justify;
+    line-height: 45px;
+    font-weight: 400;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.aboutus p::selection,.aboutus h1::selection{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(61 61 61);
+    padding: 50PX;
+    margin-top: 50px;
+}
+.list-container ul li ,.list-container ul li a,.list-container h3,.list-container p{
+    color: white;
+    font-weight: 400;
+}
+.list-container ul li a i{
+    padding: 5px;
+    
+}
+.list-container ul li a:hover{
+    text-decoration: underline;
+    width: 25px;
+    height: 25px;
+
+
+}
+
+.list-container h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.fa{
+    color: white;
+    width: 40px;
+    height: 40px;
+    
+}
+/* css pour page de connexion */
+.seconnecter{
+    background-color:rgb(30 78 41) ;
+    height :200px;
+    display: flex;
+}
+.seconnecter h1{
+    flex:1;
+    display: flex;
+    color:#ffffff;
+    align-self: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+}
+
+.formulaire{
+    
+    margin:auto;
+    margin-top: 50px;
+    
+    
+    text-align: center;
+    display:grid;
+    height: 200px;
+    width:500px;
+    
+}
+.mb-3{
+    text-align: start;
+    
+
+}
+.connexion{
+    color: #ffffff;
+    background-color:#000000;
+    padding: 10px;
+}
+.inscri{
+    text-align: end;
+    margin-top: 10px;
+    font-size: 20px;
+    color:rgb(30 78 41) ;
+}
+input.formcontrol{
+    height: 50px;
+    padding: 10px;
+}
+.formlabel{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.suivre{
+    
+    margin:auto;
+    display:flex;
+    
+    color: #624d4d;
+    font-size: 40px;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    left: 50%;
+    
+    
+
+}
+
+.mm{
+    display:flex;
+    flex-direction: column;
+}
+.drop-down{
+    position:absolute;
+    background-color: #ffffff;
+    font-weight: 600;
+}
+.drop-down li  a:hover {
+    color:rgb(30 78 41);
+
+ }
+ /* css pour page d'inscription */
+ .seconnecter{
+    background-color:rgb(30 78 41) ;
+    height :200px;
+    display: flex;
+}
+.seconnecter h1{
+    flex:1;
+    display: flex;
+    color:#ffffff;
+    align-self: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+}
+.mb-3{
+    text-align: start;
+    
+
+}
+.sinscrire{
+    color: #ffffff;
+    background-color:#000000;
+    padding: 10px;
+}
+
+.input-inscrire{
+    height: 40px;
+    padding: 5px;
+    margin:0%;
+
+}
+.label-inscrire{
+    margin-top:5px;
+
+}
+.formul{
+    margin:auto;
+    display:grid;
+    text-align: center;
+    width: 500px;
+    height: 100px;
+    margin-top: 50px;
+    
+    
+    
+}
+.mghari{
+    text-align: center;
+    margin:auto;
+    text-align: center;
+    display:grid;
+
+}
+
+
+/* css pour page vetement*/
+.vetement h1{
+    flex:1;
+    display: flex;
+    color:black;
+    align-self: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+}
+.cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 10px;
+}
+.cart a{
+    display: inline-block;
+ 
+}
